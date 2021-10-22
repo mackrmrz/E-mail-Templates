@@ -2,23 +2,80 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title></title>
+    <style type="text/css">
+      @media screen and (max-width: 630px) {
+        table {
+          border: solid red;
+        }
+
+       
+        .header {
+          padding: 22px;
+        }
+        .hero {
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.5)
+            ),
+            url('/images/peopleHero.jpeg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          height: 200px;
+          width: 100%;
+        }
+        
+        .call-action {
+          border: solid 4px black;
+        }
+      }
+    </style>
+    <title>Email Template</title>
   </head>
   <body>
-    <table>
-      <caption>
+    <table class=header-table>
+      <caption class="caption" style="padding: 33px">
         <h2>This is the fitst email attempt</h2>
       </caption>
-      <tr>
-        <th>SEIU</th>
-        <th>Rokuton</th>
-        <th><a href="#">see all active benefits</a></th>
+      <tr class="header">
+        <td>
+          <th class="logo">SEIU</th>
+          <th class="sponser">Rokuton</th>
+          <th class="link"><a href="#">see all active benefits</a></th>
+        </td>
       </tr>
-      <tr>
-        <td>one</td>
-        <td>two</td>
-        <td>three</td>
+    </table>
+    <table class="hero-table">
+      <tr style="position: relative" class="hero-wrapper">
+        <td class="hero">
+          <h5 style="color: white" class="call-action">
+            This is call to action w/ button
+          </h5>
+        </td>
       </tr>
+    </table>
+    <table class="grid-table">
+      <tr>
+        <td class="grid-wrapper">
+          <img
+            class="image"
+            style="width: 500px"
+            src="/images/CEG & MONCHIES canva2.jpeg"
+            alt=""
+          />
+        </td>
+        <td class="text" style="display: block">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vel
+          doloremque sapiente officia velit, veritatis quod, quidem autem illo
+          ratione non quae! Illo cum placeat eligendi culpa molestiae repellat
+          similique! Doloribus culpa maiores itaque, omnis aut neque magnam
+          recusandae officia laudantium quo laborum. Nulla perferendis tenetur
+          corporis consequatur veniam, dolores odit ad esse, qui magni
+          repellendus molestiae accusamus eum earum.
+        </td>
+      </tr>
+    </table>
+    <table>
       <tr>
         <td>four</td>
         <td>five</td>
